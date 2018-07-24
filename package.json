@@ -7,7 +7,7 @@
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
     "posttest": "npm run format",
-    "start:prod": "NODE_ENV=production node build/server.js",
+    "now-start": "NODE_ENV=production node build/server.js",
     "format": "prettier --write '**/*.{js,css,md}'"
   },
   "dependencies": {
