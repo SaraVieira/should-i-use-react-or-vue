@@ -1,0 +1,32 @@
+@namespace 'main';
+
+:vars {
+  blue: rgba(78, 205, 196, 1);
+  yellow: rgba(255, 230, 109, 1);
+}
+
+:import {
+  -st-from: '../styles/flex-mixin';
+  -st-default: flex;
+  -st-from: '../styles/variables.css';
+  -st-named: green, white, margin;
+}
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: value(green);
+  height: 100%;
+  flex-direction: column;
+  color: value(white);
+}
+
+.blue {
+  color: value(blue);
+}
+
+.yellow {
+  color: value(yellow)
+}

@@ -1,12 +1,14 @@
+@namespace 'button';
+
 :import {
   -st-from: '../../styles/flex-mixin';
   -st-default: flex;
   -st-from: '../../styles/variables.css';
-  -st-named: red, blue, green, yellow;
+  -st-named: red, blue, green, yellow, margin;
 }
 
 .root {
-  -st-states: secondary;
+  -st-states: secondary, tertiary;
   background: value(red);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   border-radius: 2px;
@@ -15,9 +17,15 @@
   -st-mixin: flex(center, center);
   border: none;
   margin: 0 10px;
+  margin-top: calc(value(margin) * 2);
+  width: 200px;
 }
 
 .root:secondary {
+  background: value(red);
+}
+
+.root:tertiary {
   background: value(yellow);
 }
 

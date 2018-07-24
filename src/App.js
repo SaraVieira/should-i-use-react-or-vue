@@ -1,9 +1,9 @@
 import React from 'react'
 import Route from 'react-router-dom/Route'
 import Switch from 'react-router-dom/Switch'
-import Home from './Home'
-import Question from './Question'
-import Done from './Done'
+import Home from './Pages/Home'
+import Question from './Pages/Question'
+import Done from './Pages/Done'
 import './styles.st.css'
 
 const App = () => (

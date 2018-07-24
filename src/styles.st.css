@@ -11,6 +11,14 @@
   line-height: 1.5;
 }
 
+:global(a) {
+  color: white;
+}
+
+:global(svg) {
+  margin-top: 4px;
+}
+
 /* Dank Mono font */
 @font-face {
   font-family: 'dm';

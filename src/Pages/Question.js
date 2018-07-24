@@ -1,17 +1,13 @@
-import React from 'react'
-import style from './Home.st.css'
-import Button from './Components/Button'
+import React, { Fragment } from 'react'
 import { Redirect } from 'react-router-dom'
+import style from './Main.st.css'
+import Button from '../Components/Button'
+import Title from '../Components/Title'
+import questions from '../questions'
 
 class Question extends React.Component {
   state = {
-    questions: [
-      'Is it a big application?',
-      'Does it need state management?',
-      "Will it interact with API's?",
-      'Will it have complicated styling?',
-      'Does it have forms?'
-    ],
+    questions,
     question: null,
     called: 0
   }
@@ -22,7 +18,6 @@ class Question extends React.Component {
 
   getQuestion() {
     const random = Math.floor(Math.random() * this.state.questions.length)
-    console.log(random)
     this.setState(({ questions, called }) => ({
       question: questions[random],
       called: called + 1
@@ -31,17 +26,18 @@ class Question extends React.Component {
 
   render() {
     return (
-      <div {...style('root', {}, this.props)}>
-        {this.state.called}
-        <div className={style.main}>
-          <h2 className={style.title}>{this.state.question}</h2>
-          <div className={style.buttonGroup}>
-            <Button onClick={() => this.getQuestion()}>Yes</Button>
+      <main {...style('root', {}, this.props)}>
+        <Fragment>
+          <Title>{this.state.question}</Title>
+          <section className={style.buttonGroup}>
+            <Button tertiary onClick={() => this.getQuestion()}>
+              Yes
+            </Button>
             <Button secondary onClick={() => this.getQuestion()}>
               No
             </Button>
-          </div>
-        </div>
+          </section>
+        </Fragment>
         {this.state.called === 5 ? (
           <Redirect
             to={{
@@ -49,7 +45,7 @@ class Question extends React.Component {
             }}
           />
         ) : null}
-      </div>
+      </main>
     )
   }
 }

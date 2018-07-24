@@ -1,0 +1,13 @@
+@namespace 'title';
+
+:import {
+  -st-from: '../../styles/variables.css';
+  -st-named: margin, white;
+}
+
+.root {
+  color: value(white);
+  font-size: 40px;
+  font-weight: normal;
+  margin: value(margin) 0;
+}
