@@ -1,0 +1,32 @@
+:import {
+  -st-from: '../../styles/flex-mixin';
+  -st-default: flex;
+  -st-from: '../../styles/variables.css';
+  -st-named: red, blue, green, yellow;
+}
+
+.root {
+  -st-states: secondary;
+  background: value(red);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  min-width: 120px;
+  height: 40px;
+  -st-mixin: flex(center, center);
+  border: none;
+  margin: 0 10px;
+}
+
+.root:secondary {
+  background: value(yellow);
+}
+
+.text {
+  font-family: Avenir, Helvetica, sans-serif;
+  font-size: 16px;
+  color: value(green);
+  letter-spacing: 0;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(78, 205, 196, 0.4);
+  font-weight: bold;
+}

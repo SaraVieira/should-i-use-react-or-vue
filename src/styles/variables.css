@@ -1,0 +1,11 @@
+:vars {
+  green: rgba(26, 83, 92, 1);
+  blue: rgba(78, 205, 196, 1);
+  white: rgba(247, 255, 247, 1);
+  red: rgba(255, 107, 107, 1);
+  yellow: rgba(255, 230, 109, 1);
+  black: #2c2c2c;
+
+  padding: 8px;
+  margin: 8px;
+}
