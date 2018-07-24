@@ -1,4 +1,4 @@
-@namespace 'main';
+@namespace "main";
 
 :vars {
   blue: rgba(78, 205, 196, 1);
@@ -6,9 +6,9 @@
 }
 
 :import {
-  -st-from: '../styles/flex-mixin';
+  -st-from: "../styles/flex-mixin";
   -st-default: flex;
-  -st-from: '../styles/variables.css';
+  -st-from: "../styles/variables.css";
   -st-named: green, white, margin;
 }
 
@@ -28,5 +28,5 @@
 }
 
 .yellow {
-  color: value(yellow)
+  color: value(yellow);
 }

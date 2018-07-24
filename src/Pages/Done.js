@@ -1,13 +1,13 @@
-import React, { Fragment } from 'react'
-import { Twitter } from 'react-social-sharing'
-import style from './Main.st.css'
-import Title from '../Components/Title'
+import React, { Fragment } from "react"
+import { Twitter } from "react-social-sharing"
+import style from "./Main.st.css"
+import Title from "../Components/Title"
 
 const Done = props => (
-  <main {...style('root', {}, props)}>
+  <main {...style("root", {}, props)}>
     <Fragment>
       <Title>
-        No one cares if you use <span className={style.blue}>React</span> or{' '}
+        No one cares if you use <span className={style.blue}>React</span> or{" "}
         <span className={style.yellow}>Vue</span>?
       </Title>
       <Title>They are both fucking awesome!</Title>
@@ -17,6 +17,7 @@ const Done = props => (
           link="https://should-i-use-react-or-vue.now.sh"
         />
         <a
+          rel="noopener noreferrer"
           target="_blank"
           href="https://github.com/SaraVieira/should-i-use-react-or-vue"
         >

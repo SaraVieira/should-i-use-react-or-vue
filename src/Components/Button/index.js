@@ -1,10 +1,10 @@
-import * as React from 'react'
-import style from './button.st.css'
+import * as React from "react"
+import style from "./button.st.css"
 
 export default props => (
   <button
     {...style(
-      'root',
+      "root",
       { secondary: props.secondary, tertiary: props.tertiary },
       props
     )}

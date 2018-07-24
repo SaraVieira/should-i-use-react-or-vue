@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react'
-import { Redirect } from 'react-router-dom'
-import style from './Main.st.css'
-import Button from '../Components/Button'
-import Title from '../Components/Title'
-import questions from '../questions'
+import React, { Fragment } from "react"
+import { Redirect } from "react-router-dom"
+import style from "./Main.st.css"
+import Button from "../Components/Button"
+import Title from "../Components/Title"
+import questions from "../questions"
 
 class Question extends React.Component {
   state = {
@@ -26,7 +26,7 @@ class Question extends React.Component {
 
   render() {
     return (
-      <main {...style('root', {}, this.props)}>
+      <main {...style("root", {}, this.props)}>
         <Fragment>
           <Title>{this.state.question}</Title>
           <section className={style.buttonGroup}>
@@ -41,7 +41,7 @@ class Question extends React.Component {
         {this.state.called === 5 ? (
           <Redirect
             to={{
-              pathname: '/done'
+              pathname: "/done"
             }}
           />
         ) : null}

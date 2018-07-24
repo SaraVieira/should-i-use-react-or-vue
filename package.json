@@ -6,7 +6,9 @@
     "start": "razzle start",
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
-    "start:prod": "NODE_ENV=production node build/server.js"
+    "posttest": "npm run format",
+    "start:prod": "NODE_ENV=production node build/server.js",
+    "format": "prettier --write '**/*.{js,css,md}'"
   },
   "dependencies": {
     "express": "^4.16.3",
@@ -17,6 +19,7 @@
     "react-social-sharing": "^1.3.2"
   },
   "devDependencies": {
+    "prettier": "^1.13.7",
     "razzle-plugin-stylable": "^1.1.0",
     "stylable": "^5.4.11"
   }

@@ -1,7 +1,7 @@
-@namespace 'title';
+@namespace "title";
 
 :import {
-  -st-from: '../../styles/variables.css';
+  -st-from: "../../styles/variables.css";
   -st-named: margin, white;
 }
 

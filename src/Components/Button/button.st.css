@@ -1,9 +1,9 @@
-@namespace 'button';
+@namespace "button";
 
 :import {
-  -st-from: '../../styles/flex-mixin';
+  -st-from: "../../styles/flex-mixin";
   -st-default: flex;
-  -st-from: '../../styles/variables.css';
+  -st-from: "../../styles/variables.css";
   -st-named: red, blue, green, yellow, margin;
 }
 

@@ -1,3 +1,3 @@
 module.exports = {
-  modify: require('razzle-plugin-stylable')
+  modify: require("razzle-plugin-stylable")
 }
