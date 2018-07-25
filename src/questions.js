@@ -10,5 +10,6 @@ export default [
   "Will you use Reactive Programming?",
   "Is performance a big concern?",
   "Will it be super interactive?",
-  "Will it be server rendered?"
+  "Will it be server rendered?",
+  "Do the developers have time to learn new concepts?"
 ]
