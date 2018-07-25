@@ -9,7 +9,7 @@ class Question extends React.Component {
   state = {
     questions,
     question: null,
-    called: 0
+    called: []
   }
 
   componentDidMount() {
@@ -17,10 +17,15 @@ class Question extends React.Component {
   }
 
   getQuestion() {
-    const random = Math.floor(Math.random() * this.state.questions.length)
+    const findRandomNumber = () => {
+      const result = Math.floor(Math.random() * this.state.questions.length)
+      if (this.state.called.includes(result)) return findRandomNumber()
+      return result
+    }
+    const random = findRandomNumber()
     this.setState(({ questions, called }) => ({
       question: questions[random],
-      called: called + 1
+      called: [...called, random]
     }))
   }
 
@@ -38,7 +43,7 @@ class Question extends React.Component {
             </Button>
           </section>
         </Fragment>
-        {this.state.called === 5 ? (
+        {this.state.called.length === 5 ? (
           <Redirect
             to={{
               pathname: "/done"
