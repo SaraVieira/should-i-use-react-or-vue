@@ -1,5 +1,5 @@
 export default [
-  "Is it a big application?",
+  "Is it going to have more than 50K lines of code?",
   "Does it need state management?",
   "Will it interact with API's?",
   "Will it have complicated styling?",
