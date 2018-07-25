@@ -1,7 +1,7 @@
 export default [
   "Is it going to have more than 50K lines of code?",
   "Does it need state management?",
-  "Will it interact with API's?",
+  "Will it interact with APIs?",
   "Will it have complicated styling?",
   "Does it have forms?",
   "Will it use GraphQL?",
