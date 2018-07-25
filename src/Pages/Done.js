@@ -8,7 +8,7 @@ const Done = props => (
     <Fragment>
       <Title>
         No one cares if you use <span className={style.blue}>React</span> or{" "}
-        <span className={style.yellow}>Vue</span>?
+        <span className={style.yellow}>Vue</span>.
       </Title>
       <Title>They are both fucking awesome!</Title>
       <div>
