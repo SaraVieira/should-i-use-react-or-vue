@@ -11,6 +11,7 @@ export default [
   "Is performance a big concern?",
   "Will it be super interactive?",
   "Will it be server rendered?",
+  "Do most of your customers use Google Chrome browser?",
   "Do the developers have time to learn new concepts?",
   "Is client side latency very important for your application?",
   "Will it need a powerful template engine?"
