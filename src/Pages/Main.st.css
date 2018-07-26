@@ -1,10 +1,5 @@
 @namespace "main";
 
-:vars {
-  blue: rgba(78, 205, 196, 1);
-  yellow: rgba(255, 230, 109, 1);
-}
-
 :import {
   -st-from: "../styles/flex-mixin";
   -st-default: flex;
@@ -24,9 +19,9 @@
 }
 
 .blue {
-  color: value(blue);
+  color: rgba(78, 205, 196, 1);
 }
 
 .yellow {
-  color: value(yellow);
+  color: rgba(255, 230, 109, 1);
 }
