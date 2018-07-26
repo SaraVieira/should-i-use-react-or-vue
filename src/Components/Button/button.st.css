@@ -19,6 +19,7 @@
   margin: 0 10px;
   margin-top: calc(value(margin) * 2);
   width: 200px;
+  cursor: pointer;
 }
 
 .root:secondary {

@@ -2,6 +2,7 @@ import React, { Fragment } from "react"
 import { Twitter } from "react-social-sharing"
 import style from "./Main.st.css"
 import Title from "../Components/Title"
+import Button from "../Components/Button"
 
 const Done = props => (
   <main {...style("root", {}, props)}>
@@ -22,6 +23,11 @@ const Done = props => (
           href="https://github.com/SaraVieira/should-i-use-react-or-vue"
         >
           Repo
+        </a>
+      </div>
+      <div>
+        <a href="/">
+          <Button tertiary>Play again?!</Button>
         </a>
       </div>
     </Fragment>
