@@ -1,8 +1,17 @@
+// @flow
+
 import * as React from "react"
 import style from "./button.st.css"
 
-export default props => (
+type Props = {
+  children: React.Node,
+  secondary?: boolean,
+  tertiary?: boolean
+}
+
+export default (props: Props) => (
   <button
+    // $FlowFixMe
     {...style(
       "root",
       { secondary: props.secondary, tertiary: props.tertiary },

@@ -1,11 +1,14 @@
+// @flow
+
 import React, { Fragment } from "react"
 import { Twitter } from "react-social-sharing"
 import style from "./Main.st.css"
 import Title from "../Components/Title"
 import Button from "../Components/Button"
 
-const Done = props => (
-  <main {...style("root", {}, props)}>
+const Done = () => (
+  // $FlowFixMe
+  <main {...style("root", {})}>
     <Fragment>
       <Title>
         No one cares if you use <span className={style.blue}>React</span> or{" "}

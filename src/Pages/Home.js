@@ -1,9 +1,18 @@
+// @flow
+
 import React, { Fragment } from "react"
 import style from "./Main.st.css"
 import Button from "../Components/Button"
 import Title from "../Components/Title"
 
-const Home = props => (
+type Props = {
+  history: {
+    push: Function
+  }
+}
+
+const Home = (props: Props) => (
+  // $FlowFixMe
   <main {...style("root", {}, props)}>
     <Fragment>
       <Title>

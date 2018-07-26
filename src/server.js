@@ -4,7 +4,7 @@ import { StaticRouter } from "react-router-dom"
 import express from "express"
 import { renderToString } from "react-dom/server"
 
-const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
+const assets = require(`${process.env.RAZZLE_ASSETS_MANIFEST}`)
 
 const server = express()
 server

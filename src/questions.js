@@ -1,3 +1,5 @@
+// @flow
+
 export default [
   "Is it going to have more than 50K lines of code?",
   "Does it need state management?",
